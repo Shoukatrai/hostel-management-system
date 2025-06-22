@@ -40,9 +40,9 @@ const NavBar = (props) => {
             <List>
                 {navItems.map((item) => (
                     <ListItem key={item.title} disablePadding>
-                        <ListItemButton sx={{ textAlign: 'center' }}>
-                            <Link to={item.url} >
-                            <ListItemText primary={item.title} />
+                        <ListItemButton>
+                            <Link to={item.url} className='link-res'  >
+                            <ListItemText primary={item.title} sx={{ textAlign: 'center' }}/>
                             </Link>
                         </ListItemButton>
                     </ListItem>
@@ -77,7 +77,7 @@ const NavBar = (props) => {
                     <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
                         {navItems.map((item) => (
                             <Button key={item.title} sx={{ color: '#fff' }}>
-                                <Link to={item.url}>
+                                <Link to={item.url} className='link' >
                                     {item.title}
                                 </Link>
                             </Button>
@@ -105,7 +105,7 @@ const NavBar = (props) => {
             <Box component="main" sx={{ p: 3 }}>
                 <Toolbar />
                 <Typography>
-                    Hello
+                    
                 </Typography>
             </Box>
         </Box>

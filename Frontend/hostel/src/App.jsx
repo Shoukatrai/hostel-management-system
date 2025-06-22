@@ -4,6 +4,8 @@ import LoginPage from './pages/auth/LoginPage'
 import SignUpPage from './pages/auth/SignUpPage'
 import HomePage from './pages/auth/HomePage'
 import NavBar from './components/NavBar'
+import './App.css'
+
 
 const App = () => {
   return (
